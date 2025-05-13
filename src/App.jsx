@@ -6,6 +6,9 @@ import googleclone from "./assets/images/google-clone.png";
 import shoestore from "./assets/images/shoe-store.png";
 import liquor from "./assets/images/liquor.png";
 
+import mouli1 from "./assets/images/mouli.jpg";
+import mouli2 from "./assets/images/mouli2.jpg";
+
 export default function App() {
   const [isVisible, setIsVisible] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,6 +78,17 @@ export default function App() {
       demoLink: "https://liquor-store-mouli.netlify.app/",
       sourceLink: "https://github.com/ISSMOULI/liquor-store",
       Image: liquor,
+    },
+  ];
+
+  const Images = [
+    {
+      id: 1,
+      IImage: mouli1,
+    },
+    {
+      id: 2,
+      IImage: mouli2,
     },
   ];
 
@@ -187,7 +201,7 @@ export default function App() {
             <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center p-1 animate-float shadow-xl">
               <div className="bg-white w-full h-full rounded-full overflow-hidden">
                 {/* Replace with your image src */}
-                <img src="src\assets\images\mouli.jpg" alt="Your Photo" className="w-full h-full object-cover" />
+                <img src={mouli1} alt="Your Photo" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -204,7 +218,7 @@ export default function App() {
             <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-lg overflow-hidden shadow-xl animate-fadeInLeft">
                 {/* Replace with your second image */}
-                <img src="src\assets\images\mouli2.jpg" alt="Profile" className="w-full h-full object-cover" />
+                <img src={mouli2} alt="Profile" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="md:w-2/3 md:pl-12 animate-fadeInRight">
